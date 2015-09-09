@@ -167,7 +167,6 @@ int unpack(char * buf, int len, char * addr){
    }
    if(icmp->type != ICMP_ECHOREPLY || icmp->id != getpid()){
    		printf("ICMP packets not send by us\n");
-		printf("kkk=%d\n",icmp->type);
    		return -1;
    }
 
